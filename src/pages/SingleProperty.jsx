@@ -96,12 +96,12 @@ function SingleProperty() {
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
             Reviews
           </h2>
-          <div className="grid grid-cols-1 gap-4 mx-auto my-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 mx-auto my-4 md:grid-cols-2 lg:grid-cols-2">
             {listData?.reviews && listData.reviews?.length > 0 ? (
               listData.reviews?.map((review) => (
                 <div
                   key={review.id}
-                  className="flex items-start max-w-md p-4 bg-white rounded-lg shadow-md dark:bg-gray-800"
+                  className="flex items-start max-w-lg p-4 bg-white rounded-lg shadow-md dark:bg-gray-800"
                 >
                   <Avatar
                     name={review?.username || "User"}
